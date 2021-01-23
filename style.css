@@ -51,6 +51,11 @@ header {
   padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
+  /* padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto; */
 } /* Логотип */
 .logo {
   margin-right: 93px;
@@ -61,7 +66,11 @@ header {
   padding-bottom: 25px; */
 }
 
+
 .logo-footer {
+  display: block;
+  margin-bottom: 20px;
+  font-style: normal;
   font-family: "Raleway", sans-serif;
   color: var(--primary-text-color);
 }
@@ -98,8 +107,15 @@ header {
 
 .main-nav {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  align-items: baseline;
 }
+.main-nav-list .item {
+  margin-right: 50px;
+    padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .main-nav-list {
   display: flex;
   text-transform: capitalize;
@@ -110,40 +126,44 @@ header {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px;
-  /* color: var(--accent-color); */
 }
 
 .main-nav-list .item:last-child {
   margin-right: 0px;
 }
 
-.main-nav-list .item {
-  /* background-color: tomato; */
-  padding-top: 32px;
-  padding-bottom: 32px;
+.current{
+  color: var(--accent-color);
 }
 
-/* .current {
-  color: var(--accent-color);
-} */
-
-/* .main-nav a:visited, */
+/* .main-mav-list a:visited, */
 .main-nav-list a:active,
 .main-nav-list a:hover,
 .main-nav-list a:focus {
   color: var(--accent-color);
 }
+
+
 .main-tel {
   display: flex;
   margin: 0px;
   margin-left: auto;
   padding: 0px;
+  align-items: baseline;
 }
 
 .main-tel .item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   margin-right: 50px;
+}
+.link-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  vertical-align: middle;
 }
 
 .main-tel .item:last-child {
@@ -157,6 +177,9 @@ header {
   line-height: 1.14em;
   letter-spacing: 0.02em;
   color: var(--tittle-text-color);
+}
+.main-tel li {
+  margin-right: 30px;
 }
 
 /*main-tel a:visited, */
@@ -209,8 +232,7 @@ header {
   padding-bottom: 94px;
 }
 
-.softskill ul,
-li {
+.softskill-list li {
   margin-top: 0px;
   margin-right: 8px;
   margin-bottom: 0px;
@@ -303,7 +325,7 @@ li:last-child {
   color: var(--tittle-text-color);
 }
 /* Кнопки портфолио */
-.b1 {
+.button {
   /* margin: 94px 0 50px 0; */
   background: var(--background-color);
   min-width: 73px;
@@ -312,14 +334,31 @@ li:last-child {
   padding: 6px 22px;
 }
 
-.b1:hover,
-.b1:focus {
+.button:hover,
+.button:focus {
   background: var(--accent-color);
   color: var(--primary-bg-color);
 }
 
 .team {
   background-color: var(--background-color-third);
+}
+/* 
+.team ul {
+  margin: 0px;
+} */
+
+.team-list {
+  margin: 0px;
+}
+
+.team-list .item {
+  overflow: hidden;
+  width: calc((100% - 90px) / 4);
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team img {
@@ -346,7 +385,7 @@ li:last-child {
 }
 
 .do h2,
-.team h2 {
+.team h2{
   margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
@@ -367,7 +406,7 @@ li:last-child {
 }
 
 .team ul {
-  margin: 0px;
+  /* margin: 0px; */
   padding-left: 0px;
 }
 
@@ -378,8 +417,8 @@ li:last-child {
 .employee-info {
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .employee-info h3 {
@@ -402,14 +441,94 @@ li:last-child {
   color: var(--tittle-text-color);
 }
 
+/* Социальные сети */
+
+.socials-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  border-radius: 50%;
+}
+
+.social-link a {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  /* background-color: teal; */
+}
+
+.social-link a:last-child {
+  margin-right: 0px;
+}
+
+.social-link a:hover,
+.social-link a:focus {
+  background-color: var(--accent-color);
+}
+
+  /* fill="var(--color1, #afb1b8)" */
+  .social-icon{
+    fill:#afb1b8 ;
+  }
+.icon-instagram:hover,
+.icon-instagram:focus{
+  fill: #FFFFFF;
+}
+
+.icon-twitter:hover,
+.icon-twitter:focus{
+  fill: #FFFFFF;
+}
+
+.icon-facebook:hover,
+.icon-facebook:focus{
+  fill: #FFFFFF;
+}
+
+.icon-linkedin:hover,
+.icon-linkedin:focus{
+  fill: #FFFFFF;
+}
+/* -------------------- */
+
 .menu {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
+/* .item::after{
+display: block;
+content: '';
+position: absolute;
+left: 0;
+bottom: 4px;
+width: 100%;
+height: 4px;
+background: var(--accent-color);
+border-radius: 2px;
+} */
+
+
+
+.main-nav-menu {
+  margin-right: 50px;
+}
 .button-list {
   margin-top: 0px;
   margin-bottom: 50px;
+}
+
+.button-list > li{
+  margin-right: 8px;
+}
+
+.button-list > li:last-child{
+  margin-right: 0px;
 }
 
 .menu ul {
@@ -438,6 +557,11 @@ li:last-child {
 
 .flex-element a {
   display: block;
+}
+
+.flex-element a:hover,
+.flex-element a:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .flex-element:nth-child(3n) {
@@ -477,20 +601,75 @@ li:last-child {
   line-height: 1, 88em;
   letter-spacing: 0.03em;
 }
+/* постоянные клиенты */
+.section-title {
+margin: 0px 0px 50px 0px;
+padding: 0px;
+text-align: center;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0.03em;
+}
+
+.client{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.link-customer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding-inline-start: 0px;
+}
+
+.client-list .item-icon {
+  display: block;
+  width: calc((100% - 150px) / 6);
+  margin-right: 30px;
+}
+.client-list .item-icon:last-child {
+  margin-right: 0px;
+}
+
+.client-list a:hover,
+.client-list a:focus,
+.item-icon:hover,
+.item-icon:focus {
+  color: var(--accent-color);
+  --color1: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
 /* Подвал */
 footer {
   background-color: var(--background-color-second);
   color: var(--primary-bg-color);
   padding: 60px 0px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
-address {
+/* address {
   margin-top: 20px;
-}
+  margin-right: 70px;
+} */
 
 .adress-one ul {
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-right: 70px;
   padding: 0px;
 }
 
@@ -522,6 +701,32 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* Социальные сети подвал */
+
+.footer-social-link{
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 20px ;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+}
+
+.footer-oll {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-list {
+  display: flex;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.social-link{
+  margin-right: 10px
+
+
 /* h1,
 h2,
 h3,
@@ -531,4 +736,4 @@ h6,
 p {
   margin-top: 0px;
   margin-bottom: 0px;
-} */
+} */ ;
