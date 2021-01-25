@@ -38,7 +38,7 @@ body {
   /* background-color: var(--background-color); */
   margin: 0px;
   color: var(--primary-text-color);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   /* font-family: "Raleway", sans-serif; */
 }
 header {
@@ -59,19 +59,18 @@ header {
 } /* Логотип */
 .logo {
   margin-right: 93px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: var(--primary-text-color);
   /* margin-bottom: 20px; */
   /* padding-top: 24px;
   padding-bottom: 25px; */
 }
 
-
 .logo-footer {
   display: block;
   margin-bottom: 20px;
   font-style: normal;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: var(--primary-text-color);
 }
 
@@ -112,7 +111,7 @@ header {
 }
 .main-nav-list .item {
   margin-right: 50px;
-    padding-top: 32px;
+  padding-top: 32px;
   padding-bottom: 32px;
 }
 
@@ -132,7 +131,7 @@ header {
   margin-right: 0px;
 }
 
-.current{
+.current {
   color: var(--accent-color);
 }
 
@@ -142,7 +141,6 @@ header {
 .main-nav-list a:focus {
   color: var(--accent-color);
 }
-
 
 .main-tel {
   display: flex;
@@ -385,7 +383,7 @@ li:last-child {
 }
 
 .do h2,
-.team h2{
+.team h2 {
   margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
@@ -471,29 +469,15 @@ li:last-child {
   background-color: var(--accent-color);
 }
 
-  /* fill="var(--color1, #afb1b8)" */
-  .social-icon{
-    fill:#afb1b8 ;
-  }
-.icon-instagram:hover,
-.icon-instagram:focus{
-  fill: #FFFFFF;
+/* fill="var(--color1, #afb1b8)" */
+.social-icon {
+  fill: #afb1b8;
+}
+.social-icon:hover,
+.social-icon:focus {
+  fill: #ffffff;
 }
 
-.icon-twitter:hover,
-.icon-twitter:focus{
-  fill: #FFFFFF;
-}
-
-.icon-facebook:hover,
-.icon-facebook:focus{
-  fill: #FFFFFF;
-}
-
-.icon-linkedin:hover,
-.icon-linkedin:focus{
-  fill: #FFFFFF;
-}
 /* -------------------- */
 
 .menu {
@@ -513,8 +497,6 @@ background: var(--accent-color);
 border-radius: 2px;
 } */
 
-
-
 .main-nav-menu {
   margin-right: 50px;
 }
@@ -523,11 +505,11 @@ border-radius: 2px;
   margin-bottom: 50px;
 }
 
-.button-list > li{
+.button-list > li {
   margin-right: 8px;
 }
 
-.button-list > li:last-child{
+.button-list > li:last-child {
   margin-right: 0px;
 }
 
@@ -560,8 +542,9 @@ border-radius: 2px;
 }
 
 .flex-element a:hover,
-.flex-element a:focus{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.flex-element a:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .flex-element:nth-child(3n) {
@@ -603,16 +586,16 @@ border-radius: 2px;
 }
 /* постоянные клиенты */
 .section-title {
-margin: 0px 0px 50px 0px;
-padding: 0px;
-text-align: center;
-font-weight: bold;
-font-size: 36px;
-line-height: 42px;
-letter-spacing: 0.03em;
+  margin: 0px 0px 50px 0px;
+  padding: 0px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
 }
 
-.client{
+.client {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -623,14 +606,17 @@ letter-spacing: 0.03em;
   align-items: center;
   width: 170px;
   height: 90px;
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
 }
 .client-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0px;
   padding-inline-start: 0px;
+}
+
+.item-icon {
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
 }
 
 .client-list .item-icon {
@@ -703,13 +689,13 @@ footer {
 
 /* Социальные сети подвал */
 
-.footer-social-link{
+.footer-social-link {
   text-transform: uppercase;
   margin-top: 0px;
-  margin-bottom: 20px ;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
 }
 
 .footer-oll {
@@ -723,9 +709,13 @@ letter-spacing: 0.03em;
   padding: 0px;
 }
 
-.social-link{
-  margin-right: 10px
+.social-link {
+  margin-right: 10px;
+}
 
+.social-icon .icon-footer {
+  fill: #ffffff;
+}
 
 /* h1,
 h2,
